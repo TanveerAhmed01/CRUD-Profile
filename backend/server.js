@@ -10,8 +10,16 @@ require('dotenv').config();
 const app = express();
 
 // Enable CORS for requests from http://localhost:3000
+// app.use(cors({
+//   origin: 'http://localhost:3000'
+// }));
+
+const allowedOrigins = process.env.NODE_ENV === 'production' 
+  ? ['https://crud-profile.vercel.app/'] 
+  : ['http://localhost:3000'];
+
 app.use(cors({
-  origin: 'https://your-frontend-app.vercel.app', // Update this with your actual Vercel frontend URL
+  origin: allowedOrigins
 }));
 
 app.use(bodyParser.json());
