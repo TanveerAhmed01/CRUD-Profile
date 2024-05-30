@@ -20,6 +20,7 @@
         "src": "/(.*)",
         "dest": "/frontend/dist/$1"
       }
-    ]
+    ],
+    "prebuild": "chmod -R +x frontend/node_modules/.bin"
   }
   
