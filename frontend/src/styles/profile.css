@@ -1,0 +1,73 @@
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.profile-container img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.profile-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-container button[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+.profile-container button[type="button"] {
+    background-color: green;
+    color: white;
+}
+
+.profile-container button[type="button"]:last-of-type {
+    background-color: green;
+}
+
+.profile-container button:hover {
+    opacity: 0.8;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
