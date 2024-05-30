@@ -6,7 +6,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/' // Ensure routing works correctly
   },
   module: {
     rules: [
@@ -34,6 +33,5 @@ module.exports = {
     },
     compress: true,
     port: 3000,
-    historyApiFallback: true, // Enable history API fallback for single-page applications
   },
 };
